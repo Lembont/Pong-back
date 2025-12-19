@@ -13,4 +13,4 @@ COPY . .
 
 EXPOSE 4000
 
-CMD ["sh", "-c", "npx prisma generate && nodemon app.js"]
+CMD ["sh", "-c", "npx prisma db push && node app.js"]
